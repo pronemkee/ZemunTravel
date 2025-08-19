@@ -19,7 +19,6 @@ section#contact .form-group textarea.form-control {
 section#contact .form-group {
     position: relative;
 }
-
 section#contact .form-group #floatingmessage:focus + .floattext,
 #floatingmessage:not(:placeholder-shown) + .floattext {
     top: 5px;
@@ -55,4 +54,168 @@ section#contact .form-group label{
 form div:nth-child(2){
     flex-direction: column;
     align-items: center;
+}
+
+
+.gallery-slider img {
+  
+  height: auto; /* da bude responsive */
+  max-height: 550px; /* ograničenje visine */
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+/* Stil za strelice */
+.gallery-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-arrows .slick-prev,
+.gallery-arrows .slick-next {
+  position: static !important;
+  transform: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 38px;
+  color: black;
+  opacity: 1;
+}
+
+
+
+#testimonial-carousel .item .card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#testimonial-carousel .item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#testimonial-carousel .item h5 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+#testimonial-carousel .item h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+#testimonial-carousel .item p {
+  font-size: 15px;
+  color: #555;
+  /* line-height: 2.5; */
+}
+
+
+/* Strelice */
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-nav button {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 42px !important;
+  margin: 0px -50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.owl-nav button:hover {
+  background: none !important;
+  color: black !important;
+}
+
+
+@media (max-width: 600px) {
+  .owl-nav button {
+    margin: 0px !important;
+  }
+}
+
+/* Sekcija oko About me */
+#about-me {
+  background-color: #f9f9f9; /* blaga siva pozadina iza kartice */
+}
+
+/* Kartica */
+#about-me .card {
+  max-width: 900px;
+  margin: 0 auto; /* centrirana kartica */
+  border-radius: 15px;
+}
+
+/* Slika */
+#about-me img {
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Naslov */
+#about-me h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Tekst info */
+#about-me p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#about-me span {
+  color: #555;
+  font-weight: normal;
+}
+
+/* Bold labela u zlatnoj boji */
+#about-me .fw-bold.text-warning {
+  color: #fbc02d !important; /* jača žuta */
+}
+
+/* Ikonice */
+#about-me .btn-dark {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+#about-me .btn-dark:hover {
+  background-color: #fbc02d;
+  color: #000;
+  border: none;
 }
