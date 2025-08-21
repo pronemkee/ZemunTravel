@@ -20,11 +20,11 @@ document.querySelector("#ddlCategory").addEventListener("change", function () {
 
     if (selectedCategory === 0) {
         destinationsDropdown.setAttribute("disabled", "disabled");
-        destinationsDropdown.innerHTML = `<option value="0">Choose Game</option>`;
+        destinationsDropdown.innerHTML = `<option value="0">Choose City</option>`;
     } 
     else {
         destinationsDropdown.removeAttribute("disabled");
-        destinationsDropdown.innerHTML = `<option value="0">Choose Game</option>`;
+        destinationsDropdown.innerHTML = `<option value="0">Choose City</option>`;
         
         let filteredDestinations = selectedCategory === 1 ? Destinations : Destinations.filter(item => item.countryId === selectedCategory);
         
@@ -118,3 +118,4 @@ function setError(element, message, error){
       ErrorNumber++;
   }
 }
+
